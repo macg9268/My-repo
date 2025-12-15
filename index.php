@@ -1,10 +1,7 @@
 <?php
-// index.php
+// index.php - Simple static homepage
 
-// Basic configuration
-$title = "My First PHP Page";
-
-// Output HTML
+$title = "My Simple PHP Homepage";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +10,13 @@ $title = "My First PHP Page";
     <title><?php echo $title; ?></title>
 </head>
 <body>
-    <h1>Welcome to <?php echo $title; ?>!</h1>
-    <p>This is a simple PHP-powered homepage.</p>
+    <h1><?php echo $title; ?></h1>
+    <p>Welcome! This is a static homepage built with PHP and HTML.</p>
+    <p>You can edit this file to add more content, links, or styling.</p>
+
+    <hr>
+    <footer>
+        <p>&copy; <?php echo date("Y"); ?> My Website</p>
+    </footer>
 </body>
 </html>
